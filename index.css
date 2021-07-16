@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  color: green;
+}
+button {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid green;
+  color: green;
+}
+#mainContainer {
+  background-color: black;
+  height: 960px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 13fr 1fr;
+}
+#nav {
+  border-bottom: 1px solid green;
+}
+#main {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+#oOrX {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#humanOrAi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#gameGround {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+#player1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#player1ImgContainerDiv {
+  width: 300px;
+  height: 300px;
+}
+#player1Img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#player2ImgContainerDiv {
+  width: 300px;
+  height: 300px;
+}
+#player2Img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+#chartDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#chart {
+  background-color: green;
+  border: 2px solid green;
+  width: 650px;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+.chartCell {
+  background-color: black;
+}
+
+#restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  border-top: 1px solid green;
+}
