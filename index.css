@@ -36,6 +36,11 @@ button {
   justify-content: center;
   align-items: center;
 }
+#start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #humanOrAi {
   display: flex;
   flex-direction: row;
@@ -91,6 +96,9 @@ button {
 }
 .chartCell {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #restart {
