@@ -6,26 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tic-tac-toe</title>
     <link href="index.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+    </style>
   </head>
   <body>
+    <div id="gameOverMessage">
+      <div id="gameOverMessageContent">Game Over</div>
+    </div>
     <div id="mainContainer">
       <div id="nav"></div>
       <div id="main">
         <div id="buttons">
           <div id="oOrX">
-            <div>Choose</div>
-            <button id="oChoice">o</button>
-            <button id="xChoice">x</button>
+            <div class="oOrX">Choose</div>
+            <button class="oOrX" id="oChoice">o</button>
+            <button class="oOrX" id="xChoice">x</button>
           </div>
-          <div id="start"><button id="startButton">Start</button></div>
+          <div id="start"></div>
           <div id="humanOrAi">
-            <div>Opponent</div>
-            <button>Human</button>
-            <button>AI bot</button>
+            <div class="humanOrAi">Opponent</div>
+            <button class="humanOrAi">Human</button>
+            <button class="humanOrAi">AI bot</button>
           </div>
         </div>
         <div id="gameGround">
           <div id="player1">
+            <div id="humanImgContainer">
+              <div id="humanHead">
+                <div id="humanEyesContainer">
+                  <div class="humanEyes" id="humanLeftEye"></div>
+                  <div class="humanEyes" id="humanRightEye"></div>
+                </div>
+                <div id="humanNose"></div>
+                <div id="humanMouth"></div>
+              </div>
+            </div>
             <div id="player1ImgContainerDiv">Player1</div>
           </div>
           <div id="chartDiv">
@@ -42,6 +58,32 @@
             </div>
           </div>
           <div id="player2">
+            <div id="robotImgContainer">
+              <div id="robotAntennaHead"></div>
+              <div id="robotAntenna"></div>
+              <div id="robotAntennaBase"></div>
+              <div id="robotImg">
+                <div class="robotEars" id="robotLeftEar"></div>
+                <div id="robotHead">
+                  <div id="robotEyesContainer">
+                    <div class="robotEyes" id="robotLeftEye">
+                      <div class="robotEyeSockets"></div>
+                    </div>
+                    <div class="robotEyes" id="robotRightEye">
+                      <div class="robotEyeSockets"></div>
+                    </div>
+                  </div>
+                  <div id="robotNose"></div>
+                  <div id="robotMouth">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="robotEars" id="robotRightEar"></div>
+              </div>
+            </div>
             <div id="player2ImgContainerDiv">Player2</div>
           </div>
         </div>
