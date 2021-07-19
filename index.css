@@ -3,6 +3,12 @@ body {
   color: green;
   font-family: "Orbitron", sans-serif;
 }
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
 #gameOverMessage {
   position: fixed;
   width: 600px;
@@ -14,7 +20,9 @@ body {
   justify-content: center;
   align-items: center;
   display: none;
+  font-size: 26px;
 }
+
 button {
   background-color: black;
   width: 100px;
@@ -23,6 +31,10 @@ button {
   color: green;
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
+}
+button:hover {
+  color: rgb(20, 190, 20);
+  border-color: rgb(20, 190, 20);
 }
 #mainContainer {
   background-color: black;
@@ -66,25 +78,44 @@ button {
   justify-content: center;
   align-items: center;
 }
-.humanOrAi {
-  margin-right: 10px;
-  margin-left: 10px;
-}
+
 #gameGround {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
 }
+#nameFormDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 90px;
+}
+#nameForm {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#submitNamesButton {
+  margin-left: 20px;
+}
+.playerNames {
+  background-color: black;
+  color: green;
+  font-family: "Orbitron", sans-serif;
+  border: 1px solid green;
+}
+.playerNames:focus {
+  outline: green;
+}
 #player1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 18px;
 }
-#player1ImgContainerDiv {
-}
 #humanImgContainer {
+  margin-top: 30px;
   width: 300px;
   height: 380px;
   display: flex;
@@ -132,11 +163,19 @@ button {
 #player2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 18px;
 }
+#player2ChoiceOOrX {
+  text-align: center;
+  margin-top: 3px;
+}
+#player1ChoiceOOrX {
+  margin-top: 3px;
+}
 #robotImgContainer {
+  margin-top: 128px;
   width: 300px;
   height: 380px;
   display: flex;
@@ -161,8 +200,6 @@ button {
   height: 20px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-}
-#player2ImgContainerDiv {
 }
 #robotImg {
   display: flex;
@@ -225,11 +262,7 @@ button {
 #robotMouth div {
   border-right: 1px solid green;
 }
-#player2Img {
-  max-width: 100%;
-  max-height: 100%;
-  min-height: 100%;
-}
+
 #chartDiv {
   display: flex;
   justify-content: center;
@@ -244,6 +277,7 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2px;
+  font-size: 50px;
 }
 .chartCell {
   background-color: black;
@@ -260,4 +294,10 @@ button {
 
 #footer {
   border-top: 1px solid green;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer div {
+  margin-right: 20px;
 }
